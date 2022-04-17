@@ -1,0 +1,42 @@
+.register-container {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+}
+
+.register-items {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-items label,
+.register-items button {
+  margin: 10px 0;
+}
+
+.register-items input {
+  height: 20px;
+}
+
+.register-items button {
+  padding: 10px;
+  transition: 0.3s;
+  border-radius: 5px;
+  background: dodgerblue;
+  color: white;
+  cursor: pointer;
+}
+
+.register-items button:hover {
+  background: cornflowerblue;
+}
+
+.register-items button:active {
+  background: royalblue;
+}
