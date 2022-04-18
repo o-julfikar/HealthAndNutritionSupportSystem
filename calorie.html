@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Calorie Calculator | Health and Nutrition Support System</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calorie Calculator | Health and Nutrition Support System</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="calculator.css">
-    <link rel="stylesheet" href="calorie.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="calorie.css">
 
-  </head>
-  <body>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li><a href="calculator.html" class="active">Calculator</a></li>
-        <li><a href="participation.html">Participation</a></li>
-        <li>
-          <div class="accounts">
+    </head>
+    <body>
+        <nav class="nav">
             <ul>
-              <li><a href="register.html">Sign Up</a></li>
-              <li><a href="login.html">Sign In</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="calculator.html" class="active">Calculator</a></li>
+                <li><a href="participation.html">Participation</a></li>
+                <li>
+                    <div class="accounts">
+                        <ul>
+                            <li><a href="register.html">Sign Up</a></li>
+                            <li><a href="login.html">Sign In</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
+        </nav>
 
-    <div class="calculator-container">
-      <div class="sidebar">
-        <a href="calorie.html" class="active">Count calorie intake</a>
-        <a href="bmi.html">Check BMI</a>
-      </div>
-      <div class="calculator-body">
-        <div class="calorie-container">
+        <div class="calculator-container">
+            <div class="sidebar">
+                <a href="calorie.html" class="active">Count calorie intake</a>
+                <a href="bmi.html">Check BMI</a>
+            </div>
+            <div class="calculator-body">
+                <div class="calorie-container">
 
-          <label for="num-age">Age:</label>
-          <input type="number" min="0" id="num-age">
-          <label for="gender-container">Gender:</label>
-          <div class="gender-container" id="gender-container">
+                    <label for="num-age">Age:</label>
+                    <input type="number" min="0" id="num-age">
+                    <label for="gender-container">Gender:</label>
+                    <div class="gender-container" id="gender-container">
 
-            <input type="radio" value="male" id="chk-male" name="gender-radio">
-            <label for="chk-male">Male</label>
-            <input type="radio" value="female" id="chk-female" name="gender-radio">
-            <label for="chk-female">Female</label>
+                        <input type="radio" value="male" id="chk-male" name="gender-radio">
+                        <label for="chk-male">Male</label>
+                        <input type="radio" value="female" id="chk-female" name="gender-radio">
+                        <label for="chk-female">Female</label>
 
-          </div>
-          <label for="num-height">Height:</label>
-          <input type="number" min="0" id="num-height">
-          <label for="num-weight">Weight:</label>
-          <input type="number" min="0" id="num-weight">
-          <div class="self-checkbox">
-            <input type="checkbox" id="chk-self">
-            <label for="chk-self">For myself</label>
-          </div>
-          <label for="cbo-exercise">Exercise:</label>
-          <select name="cbo-exercise" id="cbo-exercise">
-            <option value="None">None</option>
-            <option value="Light">Light</option>
-            <option value="Moderate">Moderate</option>
-            <option value="Intense">Intense</option>
-            <option value="Extreme">Extreme</option>
-          </select>
+                    </div>
+                    <label for="num-height">Height (in cm):</label>
+                    <input type="number" min="0" id="num-height">
+                    <label for="num-weight">Weight (in kg):</label>
+                    <input type="number" min="0" id="num-weight">
+                    <div class="self-checkbox">
+                        <input type="checkbox" id="chk-self">
+                        <label for="chk-self">For myself</label>
+                    </div>
+                    <label for="cbo-exercise">Exercise:</label>
+                    <select name="cbo-exercise" id="cbo-exercise">
+                        <option value="None">None</option>
+                        <option value="Light">Light</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Intense">Intense</option>
+                        <option value="Extreme">Extreme</option>
+                    </select>
 
-          <button class="submit">Count Calorie</button>
+                    <button class="submit" onclick="countCalorie()">Count Calorie</button>
 
-          <p id="txt-result" hidden>Your calorie count: </p>
+                    <p id="txt-result" hidden>Your calorie count: </p>
 
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+
+        <script src="calorie.js"></script>
+    </body>
 </html>
