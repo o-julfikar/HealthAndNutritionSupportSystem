@@ -28,6 +28,15 @@
       <div class="register-items">
         <label for="txt-name">Name:</label>
         <input type="text" id="txt-name"/>
+        <label for="gender-container">Gender:</label>
+        <div class="gender-container" id="gender-container">
+
+          <input type="radio" value="male" id="chk-male" name="gender-radio">
+          <label for="chk-male">Male</label>
+          <input type="radio" value="female" id="chk-female" name="gender-radio">
+          <label for="chk-female">Female</label>
+
+        </div>
         <label for="txt-birthdate">Birthdate:</label>
         <input type="date" id="txt-birthdate">
         <label for="num-height">Height:</label>
@@ -41,8 +50,11 @@
         <label for="password-confirm">Confirm Password</label>
         <input type="password" id="password-confirm">
 
-        <button id="btn-register">Register</button>
+        <button id="btn-register" onclick="register()">Register</button>
       </div>
     </div>
+
+    <script src="register.js"></script>
+
   </body>
 </html>

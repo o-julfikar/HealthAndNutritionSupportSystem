@@ -38,5 +38,12 @@
   width: calc(100% - 20px);
   height: calc(100% - 20px);
   padding: 10px;
-  background: #888888;
+  /*background: #888888;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.participation-container .participation-body .session-unavailable {
+  font-size: calc((2vh + 2vw) / 2);
 }

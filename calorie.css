@@ -1,0 +1,38 @@
+.calculator-body {
+  display: flex;
+  justify-content: center;
+}
+
+.calorie-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.calorie-container label:not(:first-child),
+.calorie-container .self-checkbox,
+.calorie-container button {
+  margin-top: 10px;
+}
+
+.calorie-container input[type=number],
+.calorie-container select {
+  padding: 5px 2px;
+}
+
+button.submit {
+  background: tomato;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+button.submit:hover {
+  background: chocolate;
+}
+
+button.submit:active {
+  background: orange;
+}

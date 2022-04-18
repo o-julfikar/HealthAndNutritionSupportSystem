@@ -40,3 +40,16 @@
 .register-items button:active {
   background: royalblue;
 }
+
+.register-items .gender-container {
+  display: flex;
+  align-items: center;
+}
+
+.register-items .gender-container input[type=radio] {
+  margin: 5px;
+}
+
+.register-items .gender-container input[type=radio]:not(:first-child){
+  margin-left: 20px;
+}

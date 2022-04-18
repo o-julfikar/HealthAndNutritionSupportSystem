@@ -1,0 +1,37 @@
+.calculator-body {
+  display: flex;
+  justify-content: center;
+}
+
+.bmi-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.bmi-container label:not(:first-child),
+.bmi-container .self-checkbox,
+.bmi-container button {
+  margin-top: 10px;
+}
+
+.bmi-container input[type=number] {
+  padding: 5px 2px;
+}
+
+button.submit {
+  background: tomato;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+button.submit:hover {
+  background: chocolate;
+}
+
+button.submit:active {
+  background: orange;
+}

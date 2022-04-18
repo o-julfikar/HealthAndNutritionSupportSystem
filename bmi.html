@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>BMI Calculator | Health and Nutrition Support System</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>BMI Calculator | Health and Nutrition Support System</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="bmi.css">
 
-  </head>
-  <body>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li><a href="calculator.html" class="active">Calculator</a></li>
-        <li><a href="participation.html">Participation</a></li>
-        <li>
-          <div class="accounts">
+    </head>
+    <body>
+        <nav class="nav">
             <ul>
-              <li><a href="register.html">Sign Up</a></li>
-              <li><a href="login.html">Sign In</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="calculator.html" class="active">Calculator</a></li>
+                <li><a href="participation.html">Participation</a></li>
+                <li>
+                    <div class="accounts">
+                        <ul>
+                            <li><a href="register.html">Sign Up</a></li>
+                            <li><a href="login.html">Sign In</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
+        </nav>
 
 
-    <div class="calculator-container">
-      <div class="sidebar">
-        <a href="calorie.html">Count calorie intake</a>
-        <a href="bmi.html" class="active">Check BMI</a>
-      </div>
-      <div class="calculator-body">
+        <div class="calculator-container">
+            <div class="sidebar">
+                <a href="calorie.html">Count calorie intake</a>
+                <a href="bmi.html" class="active">Check BMI</a>
+            </div>
+            <div class="calculator-body">
+                <div class="bmi-container">
 
-      </div>
-    </div>
-  </body>
+                    <label for="num-age">Age:</label>
+                    <input type="number" min="0" id="num-age">
+                    <label for="num-height">Height:</label>
+                    <input type="number" min="0" id="num-height">
+                    <label for="num-weight">Weight:</label>
+                    <input type="number" min="0" id="num-weight">
+                    <div class="self-checkbox">
+                        <input type="checkbox" id="chk-self">
+                        <label for="chk-self">For myself</label>
+                    </div>
+                    <button class="submit">Calculate BMI</button>
+
+                    <p id="txt-result" hidden>Your BMI Result: </p>
+
+                </div>
+
+            </div>
+        </div>
+    </body>
 </html>
