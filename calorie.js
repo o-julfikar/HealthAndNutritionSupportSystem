@@ -32,6 +32,7 @@ function countCalorie() {
             break;
     }
 
+    document.getElementById("txt-result").hidden = false;
     document.getElementById("txt-result").innerHTML = "Your calorie count is " + calorie + ".";
 }
 
