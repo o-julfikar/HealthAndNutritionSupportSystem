@@ -5,5 +5,5 @@ function getBMI() {
     let bmi = weight / (height * height);
 
     document.getElementById("txt-result").hidden = false;
-    document.getElementById("txt-result").innerHTML = "Your BMI is " + bmi + ".";
+    document.getElementById("txt-result").innerHTML = "Your BMI is " + Math.round(bmi) + ".";
 }
