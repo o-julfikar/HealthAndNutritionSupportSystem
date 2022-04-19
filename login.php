@@ -48,4 +48,4 @@
 
     mysqli_query($conn, $sql_insert_session);
 
-    echo $session_id;
+    echo "soul_success " . $session_id;

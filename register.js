@@ -23,9 +23,12 @@ function register() {
                 alert("User already exists!");
             } else if (response === "0") {
                 alert("Failed to register. Please try again later!")
-            } else {
+            } else if (response.startsWith("soul_success")) {
+                response = response.split(" ")[1];
                 setCookie("soul_session_2022", response, 30);
                 open("./index.html");
+            } else {
+                alert("An unknown error occurred. Please try again!");
             }
         }
 

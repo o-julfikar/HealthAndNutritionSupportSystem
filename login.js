@@ -10,9 +10,12 @@ function login() {
             alert("User does not exists!");
         } else if (response === "0") {
             alert("Login credentials do not match. Please try again later!")
-        } else {
+        } else if (response.startsWith("soul_success")) {
+            response = response.split(" ")[1]
             setCookie("soul_session_2022", response, 30);
             open("./index.html", "_self");
+        } else {
+            alert("An unknown error occurred. Please try again!");
         }
     };
 

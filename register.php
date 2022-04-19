@@ -27,6 +27,7 @@
     $uid = null;
     $result_uid = mysqli_query($conn, $sql_get_uid);
 
+
     if (mysqli_num_rows($result_uid) > 0) {
         $row = mysqli_fetch_assoc($result_uid);
         $uid = $row['id'];
@@ -67,4 +68,4 @@
 
     mysqli_query($conn, $sql_insert_session);
 
-    echo $session_id;
+    echo 'soul_success ' . $session_id;
