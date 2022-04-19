@@ -29,7 +29,7 @@ function register() {
                 open("./index.html", "_self");
             } else {
                 alert("An unknown error occurred. Please try again!");
-                alert(response)
+                document.getElementById("hola").value = response
             }
         }
 

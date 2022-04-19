@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-  <head>
-    <meta charset="UTF-8">
-    <title>Sign Up | Health and Nutrition Support System</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Up | Health and Nutrition Support System</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="register.css">
-  </head>
-  <body>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li><a href="calculator.html">Calculator</a></li>
-        <li><a href="participation.html">Participation</a></li>
-        <li>
-          <div class="accounts">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <nav class="nav">
             <ul>
-              <li><a href="register.html" class="active" id="sign-up">Sign Up</a></li>
-              <li><a href="login.html" id="sign-in">Sign In</a></li>
-                <li><a href="logout.html" id="sign-out" hidden>Sign Out</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="participation.html">Participation</a></li>
+                <li>
+                    <div class="accounts">
+                        <ul>
+                            <li><a href="register.html" class="active" id="sign-up">Sign Up</a></li>
+                            <li><a href="login.html" id="sign-in">Sign In</a></li>
+                            <li><a href="logout.html" id="sign-out" hidden>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="register-container">
-      <div class="register-items">
-        <label for="txt-name">Name:</label>
-        <input type="text" id="txt-name"/>
-        <label for="gender-container">Gender:</label>
-        <div class="gender-container" id="gender-container">
+        </nav>
+        <div class="register-container">
+            <div class="register-items">
+                <label for="txt-name">Name:</label>
+                <input type="text" id="txt-name"/>
+                <label for="gender-container">Gender:</label>
+                <div class="gender-container" id="gender-container">
 
-          <input type="radio" value="male" id="chk-male" name="gender-radio">
-          <label for="chk-male">Male</label>
-          <input type="radio" value="female" id="chk-female" name="gender-radio">
-          <label for="chk-female">Female</label>
+                    <input type="radio" value="male" id="chk-male" name="gender-radio">
+                    <label for="chk-male">Male</label>
+                    <input type="radio" value="female" id="chk-female" name="gender-radio">
+                    <label for="chk-female">Female</label>
 
+                </div>
+                <label for="txt-birthdate">Birthdate:</label>
+                <input type="date" id="txt-birthdate">
+                <label for="num-height">Height (in cm):</label>
+                <input type="number" id="num-height" min="0">
+                <label for="num-weight">Weight (in kg):</label>
+                <input type="number" id="num-weight" min="0">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <label for="password-confirm">Confirm Password</label>
+                <input type="password" id="password-confirm">
+
+                <button id="btn-register" onclick="register()">Register</button>
+                <p id="hola">HOLA</p>
+            </div>
         </div>
-        <label for="txt-birthdate">Birthdate:</label>
-        <input type="date" id="txt-birthdate">
-        <label for="num-height">Height (in cm):</label>
-        <input type="number" id="num-height" min="0">
-        <label for="num-weight">Weight (in kg):</label>
-        <input type="number" id="num-weight" min="0">
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        <label for="password">Password</label>
-        <input type="password" id="password">
-        <label for="password-confirm">Confirm Password</label>
-        <input type="password" id="password-confirm">
 
-        <button id="btn-register" onclick="register()">Register</button>
-      </div>
-    </div>
+        <script src="register.js"></script>
 
-    <script src="register.js"></script>
-
-  </body>
+    </body>
 </html>
