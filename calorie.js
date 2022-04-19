@@ -32,6 +32,6 @@ function countCalorie() {
             break;
     }
 
-    alert(calorie)
+    document.getElementById("txt-result").innerHTML = "Your calorie count is " + calorie + ".";
 }
 
