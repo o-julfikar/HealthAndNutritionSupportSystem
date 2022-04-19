@@ -25,7 +25,7 @@ function register() {
                 alert("Failed to register. Please try again later!")
             } else {
                 setCookie("soul_session_2022", response, 30);
-                open("./index.html");
+                open("./index.html", "_self");
             }
         }
 
