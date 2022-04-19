@@ -1,38 +1,42 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Health and Nutrition Support System</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <title>Health and Nutrition Support System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="style.css">
-  </head>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-  <body>
-    <nav class="nav">
-      <ul>
-        <li><a href="" class="active">Home</a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li><a href="calculator.html">Calculator</a></li>
-        <li><a href="participation.html">Participation</a></li>
-        <li>
-          <div class="accounts">
+    <body>
+        <nav class="nav">
             <ul>
-              <li><a href="register.html">Sign Up</a></li>
-              <li><a href="login.html">Sign In</a></li>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="participation.html">Participation</a></li>
+                <li>
+                    <div class="accounts">
+                        <ul>
+                            <li><a href="register.html" id="sign-up">Sign Up</a></li>
+                            <li><a href="login.html" id="sign-in">Sign In</a></li>
+                            <li><a href="logout.html" id="sign-out" hidden>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
+        </nav>
 
-    <div class="index-body">
-      <img src="https://media.discordapp.net/attachments/736568773661819090/965337974529216582/unknown.png"
-      >
-    </div>
+        <div class="index-body">
+            <img id="diet-plan"
+                 src="https://media.discordapp.net/attachments/736568773661819090/965337974529216582/unknown.png"
+                 hidden
+            >
+        </div>
 
-  </body>
+        <script src="auth.js"></script>
+    </body>
 
 </html>

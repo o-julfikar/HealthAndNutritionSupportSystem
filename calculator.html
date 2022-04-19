@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Calculator | Health and Nutrition Support System</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator | Health and Nutrition Support System</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="calculator.css">
 
-  </head>
-  <body>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li><a href="calculator.html" class="active">Calculator</a></li>
-        <li><a href="participation.html">Participation</a></li>
-        <li>
-          <div class="accounts">
+    </head>
+    <body>
+        <nav class="nav">
             <ul>
-              <li><a href="register.html">Sign Up</a></li>
-              <li><a href="login.html">Sign In</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="calculator.html" class="active">Calculator</a></li>
+                <li><a href="participation.html">Participation</a></li>
+                <li>
+                    <div class="accounts">
+                        <ul>
+                            <li><a href="register.html" id="sign-up">Sign Up</a></li>
+                            <li><a href="login.html" id="sign-in">Sign In</a></li>
+                            <li><a href="logout.html" id="sign-out" hidden>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="calculator-container">
-      <div class="sidebar">
-        <a href="calorie.html">Count calorie intake</a>
-        <a href="bmi.html">Check BMI</a>
-      </div>
-      <div class="calculator-body">
+        </nav>
 
-      </div>
-    </div>
-  </body>
+        <script src="auth.js"></script>
+
+        <div class="calculator-container">
+            <div class="sidebar">
+                <a href="calorie.html">Count calorie intake</a>
+                <a href="bmi.html">Check BMI</a>
+            </div>
+            <div class="calculator-body">
+
+            </div>
+        </div>
+    </body>
 </html>

@@ -4,27 +4,8 @@
 
     $email = $_REQUEST["email"];
     $password = $_REQUEST["password"];
-    $name = $_REQUEST["name"];
-    $gender = $_REQUEST["gender"];
-    $birthdate = $_REQUEST["birthdate"];
-    $height = $_REQUEST["height"];
-    $weight = $_REQUEST["weight"];
 
-    $sql_get_uid = "SELECT id FROM user WHERE email = '$email';";
-    $result_uid = mysqli_query($conn, $sql_get_uid);
-
-    if (mysqli_num_rows($result_uid) > 0) {
-        echo -1;
-        return;
-    }
-
-    $sql_insert_user =
-        "INSERT INTO user (email, password, name, gender, birthdate, height, weight) " .
-        "VALUES ('$email', '$password', '$name', '$gender', '$birthdate', '$height', '$weight');";
-
-    mysqli_query($conn, $sql_insert_user);
-
-    $uid = null;
+    $sql_get_uid = "SELECT id FROM user WHERE email = '$email' AND password = '$password';";
     $result_uid = mysqli_query($conn, $sql_get_uid);
 
     if (mysqli_num_rows($result_uid) > 0) {

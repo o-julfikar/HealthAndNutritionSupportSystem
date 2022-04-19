@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Login | Health and Nutrition Support System</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login | Health and Nutrition Support System</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
-  </head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
 
-  <body>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li><a href="calculator.html">Calculator</a></li>
-        <li><a href="participation.html">Participation</a></li>
-        <li>
-          <div class="accounts">
+    <body>
+        <nav class="nav">
             <ul>
-              <li><a href="register.html">Sign Up</a></li>
-              <li><a href="login.html" class="active">Sign In</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="participation.html">Participation</a></li>
+                <li>
+                    <div class="accounts">
+                        <ul>
+                            <li><a href="register.html" id="sign-up">Sign Up</a></li>
+                            <li><a href="login.html" class="active" id="sign-in">Sign In</a></li>
+                            <li><a href="logout.html" id="sign-out" hidden>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="login-container">
-      <div class="login-items">
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        <label for="password">Password</label>
-        <input type="password" id="password">
-        <button>Login</button>
-      </div>
-    </div>
-  </body>
+        </nav>
+        <div class="login-container">
+            <div class="login-items">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+        <script src="login.js"></script>
+    </body>
 </html>
